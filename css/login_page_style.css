@@ -1,0 +1,162 @@
+/* Reset CSS */
+
+
+/* The background of the whole page */
+body {
+    background: url(https://wallpaperaccess.com/full/662992.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+    color: #212F3C;
+    font: 14px Arial;
+    padding: 60px;
+    position: center;
+}
+.loginPage { margin: 30px auto; position: center; width: 1800px;  height: 727px;}
+
+/* The bottom - Login, Register and password forget */
+form:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* The background of the login */
+#content {
+	background: #17202A;
+    border: 1px solid #c4c6ca;
+    margin: 90px auto;
+    padding: 100px;
+    position: relative;
+    text-align: center;
+    width: 400px;
+}
+
+/* The login word above */
+#content h1 {
+    color: #fff;
+    font: bold 30px Helvetica, Arial, sans-serif;
+    letter-spacing: -0.05em;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+
+/* The lines to the login word */
+#content h1:before,
+#content h1:after {
+	background: #fff;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 10px;
+    width: 28%;
+}
+
+/* The right "line" to the word login */
+#content h1:after { right: 0; }
+
+/* The left "line" to the word login */
+#content h1:before { left: 0; }
+
+/* The pages style at the back */
+#content:after,
+#content:before {
+    background: #17202A; /* the backgound color of the pages */
+    border: 1px solid #c4c6ca;
+    content: "";
+    height: 100%;
+    left: -1px;
+    position: absolute;
+    width: 100%;
+}
+
+/* First Page */
+#content:after {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+    top: 0;
+    z-index: -1;
+}
+
+/* Second Page */
+#content:before {
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    top: 0;
+    z-index: -2;
+}
+
+/* username and password before you type it */
+#content form { margin: 0 20px; position: relative }
+#content form input[type="email"],
+#content form input[type="password"],
+#content form input[type="text"] {
+    border-radius: 10px; /* the rounding of these fields */
+    transition: all 0.5s ease; /* login transition after refreshing */
+    background: #eae7e7 no-repeat; /* the background of these fields */
+    border: 1px solid #c8c8c8;
+    font: 15px Helvetica, Arial, sans-serif;
+    margin: 0 0 20px;
+    padding: 15px 10px 15px 10px;
+    width: 95%;
+}
+
+/* email and password after you type it */
+#content form input[type="email"]:focus,
+#content form input[type="password"]:focus,
+#content form input[type="text"]:focus {
+    -webkit-box-shadow: 0 0 2px #ed1c24 inset;
+    -moz-box-shadow: 0 0 2px #ed1c24 inset;
+    -ms-box-shadow: 0 0 2px #ed1c24 inset;
+    -o-box-shadow: 0 0 2px #ed1c24 inset;
+    box-shadow: 0 0 2px #ed1c24 inset;
+    background-color: #fff;
+    border: 1px solid #ed1c24;
+    outline: none;
+}
+
+/* Login Button */
+#content form input[type="submit"] {
+    background: #6C3483; /* login button background */
+    border-radius: 30px; /* the rounding of login button */
+    border: 1px solid #6C3483; /* login button border */
+    color: #FFF; /* login word */
+    cursor: pointer;
+    float: center;
+    font: bold 17px Helvetica, Arial, sans-serif;
+    height: 50px;
+    margin: 20px 0 35px 15px;
+    width: 120px;
+}
+
+/* Forgot your password */
+#content form div a.passwordForget {
+    color: #5499C7;
+    float: right;
+	cursor: pointer;
+    font-size: 13px;
+    margin: 0px 0px 0 0;
+}
+
+/* Register */
+#content form div a.register  {
+    color: #5499C7;
+    float: center;
+	cursor: pointer;
+    font-size: 13px;
+    margin: 30px 0px 0px 30px;
+}
+
+#content form input[type="checkbox"],
+#content form div c {
+	float: left;
+	color: #fff;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" media="all" href="css/contact_us_page_style.css" />
+        <script src="jquery.js"></script>
+        <script src="login_options.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div id="form-main">
+                <div id="form-div">
+                    <form class="montform" id="reused_form" >
+                        <p class="name">
+                            <input name="name" type="text" class="feedback-input" required placeholder="Full Name" id="name"/>
+                        </p>
+                        <p class="email">
+                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email Address"/>
+                        </p>
+						<p class="subject">
+							<select name="subject" required class="feedback-input" id="subject"/>
+								<option value="Select Subject">Select Subject</option>
+								<option value="option 1">option 1</option>
+								<option value="option 2">option 2</option>
+								<option value="option 3">option 3</option>
+								<option value="option 4">option 4</option>
+							</select>
+						</p>
+                        <p class="text">
+                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
+                        </p>
+                        <div class="submit">
+                            <button type="submit" class="button-blue" onclick="return validateSuportFields()">SUBMIT</button>
+							<div class="ease"></div>
+                        </div>
+                    </form>
+                </div>
+				<img src="https://vectorified.com/images/it-support-icon-1.png" class="contactSupportButton" onclick="parent.location='mailto:support@gmail.com'"/>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+body{
+  background-image: url("img/login_beck.jpg"); /* The image used */
+  background-color:#b8f5bb; /* Used if the image is unavailable */
+  height: 1000px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+} 
+
+.pannel {
+  width:400px;
+  height: 350px;
+  margin:350px auto;
+}

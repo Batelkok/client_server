@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS outfile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-qdQEsAI45WFCO5QwXBelBe1rR9Nwiss4rGEqiszC+9olH1ScrLrMQr1KmDR964uZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" href="css/styles.css" />
+
+    <script src="jquery.js"></script>
+    <script src="login_options.js"></script>
+</head>
+<body>
+       <div class="pannel" >
+                <div class="card border-primary mb-3" style="max-width: 20rem;" >
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="text-center">
+                                    <img src="css/img/blog-wp-login-1200x400.png" alt="Smiley face" height="90" width="250">
+                                    <h4 class="card-title">LOGIN</h4>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>                   
+                    
+                    <div class="card-body">
+                        <div class="form-group">
+                            <input required type="email" class="form-control" id="inpEmail"  placeholder="Enter email">
+                            <br>
+                            <input type="password" class="form-control" id="inpPassword" placeholder="Password">
+                            <label>Show Password</label>
+                            <input type="checkbox" onclick='showPassword()'>
+                            <a style="float: right;" href = "https://www.google.com">Forgot password?</a>
+                        </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center">
+                                <button type="button" class="btn btn-secondary" onclick='return validateFields("login")'>LOGIN</button>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="text-center"> 
+                                <label for>Do not have an account?</label>
+                                <a href = "SignUpPage.html">Sign-up</a>
+                             </div>
+                        </div>
+                    </div> 
+
+                </div>
+            </div>
+</body>
+</html>
