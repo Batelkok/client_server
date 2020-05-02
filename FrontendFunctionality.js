@@ -4,8 +4,15 @@ function validateFields(mod)
     var userMail = document.getElementById("inpEmail");
     if(!userMail.validity.valid) { alert("Invalid Email Address"); return false;}
     var userPassword = document.getElementById("inpPassword").value;
-	var confirmationPassword = document.getElementById("inpConPassword").value;
-	if(mod=="signUp" && userPassword != confirmationPassword) {alert("The passwords dosen't match!"); return false;}
+    if (mod == "signUp")
+    {
+        var confirmationPassword = document.getElementById("inpConPassword").value;
+        if (userPassword != confirmationPassword)
+        {
+            alert("The passwords dosen't match!");
+            return false;
+        }
+    }
     var errors = [];
     if (userPassword.length < 6) { errors.push("Your password must contain at least 6 characters."); }
     if (userPassword.search(/[a-z]/) < 0) { errors.push("Your password must contain at least one lower case character."); }
