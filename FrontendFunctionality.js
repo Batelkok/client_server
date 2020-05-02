@@ -37,7 +37,7 @@ function validateSuportFields()
 }
 
 // show password
-function showPassword()
+function showPassword(mod)
 {
     switch (document.getElementById("inpPassword").type)
     {
@@ -48,5 +48,15 @@ function showPassword()
             document.getElementById("inpPassword").type = "password";
             break;
     }
-
+    if (mod == "signUp")
+    {
+        switch (document.getElementById("inpConPassword").type) {
+            case "password":
+                document.getElementById("inpConPassword").type = "text";
+                break;
+            case "text":
+                document.getElementById("inpConPassword").type = "password";
+                break;
+        }
+    }
 }        
